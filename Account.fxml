@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="367.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.AccountController">
+   <children>
+      <Label layoutX="33.0" layoutY="14.0" prefHeight="58.0" prefWidth="322.0" text="Account Information">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFirst_name" editable="false" layoutX="129.0" layoutY="136.0" text="Mary" />
+      <TextField fx:id="txtLast_name" editable="false" layoutX="129.0" layoutY="175.0" text="Smith" />
+      <Label layoutX="22.0" layoutY="138.0" prefHeight="19.0" prefWidth="82.0" text="First name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="179.0" prefHeight="19.0" prefWidth="82.0" text="Last name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDOB" editable="false" layoutX="130.0" layoutY="215.0" text="05/18/1997" />
+      <TextField fx:id="txtAddy" editable="false" layoutX="130.0" layoutY="255.0" text="331 Beachside Dr" />
+      <Label layoutX="19.0" layoutY="218.0" prefHeight="19.0" prefWidth="92.0" text="Date of Birth:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="260.0" prefHeight="19.0" prefWidth="92.0" text="Address:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="302.0" prefHeight="19.0" prefWidth="92.0" text="City:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCity" editable="false" layoutX="130.0" layoutY="295.0" text="Miami" />
+      <Label layoutX="20.0" layoutY="343.0" prefHeight="19.0" prefWidth="92.0" text="State:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="129.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Florida">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="24.0" layoutY="101.0" prefHeight="19.0" prefWidth="92.0" text="ID #:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" editable="false" layoutX="128.0" layoutY="96.0" text="2121" />
+      <JFXButton layoutX="131.0" layoutY="402.0" prefHeight="52.0" prefWidth="149.0" style="-fx-background-color: #F27D20;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
