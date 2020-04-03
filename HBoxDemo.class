@@ -1,0 +1,67 @@
+package application;
+
+import java.io.IOException;
+
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+
+
+public class HBoxDemo {
+
+
+
+    @FXML
+    // Displays Campbell Database at the top
+    private Label lblCamp;
+
+    @FXML
+    // Displays the username textfield  
+    private JFXTextField txtUser;
+
+    @FXML
+    // Displays the password text field
+    private JFXPasswordField txtPassword;
+    
+    @FXML
+    // Displays the Login above text field 
+    private Text lblchanger;
+    
+    // method 
+    public void Login(ActionEvent event) throws Exception {
+    	
+    	// Defines the Userame and password for the login
+    	if (txtUser.getText().equals("Msmith") && txtPassword.getText().contentEquals("campbell")) {
+    		
+    		// Label displays thank you for Logging in! after successfully logging in
+    		lblchanger.setText("Thank you for Logging in!");
+    		
+    		//create next Stage for next Scene
+    		Stage primaryStage = new Stage ();
+    		
+    		// Account fxml scene is created after correct username and password is entered
+    		Parent root = FXMLLoader.load(getClass().getResource("/application/Account.fxml"));
+			Scene scene = new Scene(root,400,400);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+    			} 
+    	
+    				else  { 
+    					// If incorrect values are entered, application displays the message at the bottom
+    		lblchanger.setText("Incorrect Username or Password Try again!");
+    	}
+  
+    }
+    }
