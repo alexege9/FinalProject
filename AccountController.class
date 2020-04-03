@@ -1,0 +1,32 @@
+package UserLogin;
+
+import application.Main;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
+public class AccountController {
+	
+	private Main main;
+	
+	@FXML
+	private void goUserLogin() {
+	}
+    @FXML
+    private TextField txtFirst_name;
+
+    @FXML
+    private TextField txtLast_name;
+
+    @FXML
+    private TextField txtDOB;
+
+    @FXML
+    private TextField txtAddy;
+
+    @FXML
+    private TextField txtCity;
+
+    @FXML
+    private TextField txtID;
+
+}
