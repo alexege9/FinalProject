@@ -1,0 +1,51 @@
+package application;
+
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+public class NewUser extends AccountController{
+	
+			public static void main(String[] args) {
+		JTextField a = new JTextField();
+		JTextField s = new JTextField();
+		JTextField d = new JTextField();
+		JTextField f = new JTextField();
+		JTextField g = new JTextField();
+		JTextField h = new JTextField();
+		JTextField j = new JTextField();
+
+		
+		// array objects
+		Object[] grades = {
+				"First name : ", a,
+				"Last name : ", s,
+				"Date of Birth : ", d,
+				"Address:", f,
+				"City :", g,
+				"State :", h,
+				"Zipcode :",j
+		};
+		
+	JOptionPane.showConfirmDialog(null, grades, "Create New Account", JOptionPane.OK_CANCEL_OPTION);
+	
+	
+	String response;
+	response = JOptionPane.showInputDialog("What is the grade made in class 1?: ");
+	int v1 = Integer.parseInt(response);
+	
+	
+	response = JOptionPane.showInputDialog("What is the grade made in class 2?: ");
+	int v2 = Integer.parseInt(response);
+	
+	response = JOptionPane.showInputDialog("What is the grade made in class 3?: ");
+	int v3 = Integer.parseInt(response);
+	
+	response = JOptionPane.showInputDialog("What is the grade made in class 4?: ");
+	int v4 = Integer.parseInt(response);
+	
+	int gpa = (v1 + v2 + v3 + v4) / 4;
+	String message = "Your GPA value is " + gpa;
+	
+	System.out.println(message);
+	}
+}
