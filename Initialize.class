@@ -6,7 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+// import application done by alex
 public class Initialize extends GPACalculatorController {
 	
 	
@@ -21,7 +21,7 @@ public class Initialize extends GPACalculatorController {
 	     }
 		return false;
 	}
-	
+	// formula usd to calculate GPA
 	@Override
 	public void Logout(ActionEvent event) throws Exception {
 		Stage primaryStage = new Stage ();
@@ -31,8 +31,10 @@ public class Initialize extends GPACalculatorController {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
+	// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
+
 		super.Logout(event);
 	}
 }
+// comments were combined
 	
