@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+// creating label done by alex
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
@@ -8,13 +8,16 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
+// import affects buttons added to the code done by Alex
 <AnchorPane prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccountController">
+   //anchor pane to set preferred height, width, background
+   // background color set hexadecimal color code done by Ishaun
    <children>
       <Label layoutX="18.0" layoutY="-4.0" prefHeight="19.0" prefWidth="322.0" text="Account Information">
          <font>
             <Font name="Gabriola" size="48.0" />
          </font>
+         // label laout used to display text
       </Label>
       <TextField fx:id="txtFirst_name" editable="false" layoutX="159.0" layoutY="161.0" text="Mary" />
       <TextField fx:id="txtLast_name" editable="false" layoutX="159.0" layoutY="196.0" text="Smith" />
@@ -23,6 +26,8 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      //
+      //Text field created to display text done by ishaun wright
       <Label layoutX="50.0" layoutY="200.0" prefHeight="19.0" prefWidth="82.0" text="Last name:">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -35,6 +40,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      // text field to display text,date of birth, address and height done by alex
       <Label layoutX="50.0" layoutY="270.0" prefHeight="19.0" prefWidth="92.0" text="Address:">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -45,32 +51,38 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      //font to display type of font, font size done by ishaun
       <TextField fx:id="txtCity" editable="false" layoutX="160.0" layoutY="300.0" text="Miami" />
       <Label layoutX="50.0" layoutY="343.0" prefHeight="19.0" prefWidth="92.0" text="State:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      // text field to display text of miami, ishaun
       <SplitMenuButton layoutX="159.0" layoutY="334.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Florida">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </SplitMenuButton>
+      // buttoms implented by alex
       <Label layoutX="54.0" layoutY="131.0" prefHeight="19.0" prefWidth="92.0" text="ID #:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      // label layout of text done by alex
       <TextField fx:id="txtID" editable="false" layoutX="158.0" layoutY="126.0" text="2121" />
      <JFXButton layoutY="62.0" onAction="#Logout" prefHeight="52.0" prefWidth="118.0" style="-fx-background-color: #F27D20;" text="Logout" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
+        //java fx button display and text field  to display content done by alex
          <effect>
             <DropShadow />
          </effect>
       </JFXButton>
+      // effets done by alex
       <JFXButton layoutX="224.0" layoutY="62.0" onAction="#GPA" prefHeight="52.0" prefWidth="125.0" style="-fx-background-color: #F27D20;" text="GPA Calculator" textFill="WHITE">
          <font>
             <Font size="14.0" />
