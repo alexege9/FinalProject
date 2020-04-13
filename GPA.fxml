@@ -6,7 +6,7 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
+// importing java controls to the code done by alex
 <AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GPA.GPACalculatorController">
    <children>
       <AnchorPane layoutX="-43.0" layoutY="-61.0" prefHeight="500.0" prefWidth="457.0">
@@ -16,6 +16,8 @@
                   <Font name="Gabriola" size="36.0" />
                </font>
             </Label>
+            //ancor pane inherits pane class and allows us to set borders preferred height, etc.. done by alex
+            // label layout to show height and font to display gpa text done by ishaun
             <JFXTextField fx:id="txtvalue1" layoutX="159.0" layoutY="206.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter # value" />
             <JFXTextField fx:id="txtvalue2" layoutX="158.0" layoutY="246.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter  # value " />
             <JFXTextField fx:id="txtvalue3" layoutX="158.0" layoutY="286.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter  # value " />
@@ -25,6 +27,9 @@
                <effect>
                   <DropShadow />
                </effect></JFXButton>
+            // text value entered in fx ID , integers are set and preferred heiht/width are set. done by alex
+            // Number is intered for the GPA done by alex
+            // dropshadow effect implemented done by ishaun
             <JFXButton layoutX="58.0" layoutY="110.0" onAction="#Logout" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #F27D20;" text="Logout" textFill="WHITE">
                <effect>
                   <DropShadow />
@@ -33,6 +38,7 @@
                <effect>
                   <DropShadow />
                </effect></JFXButton>
+            // java button for GPA calculator
             <Label fx:id="lblChg" layoutX="158.0" layoutY="426.0" prefHeight="25.0" prefWidth="203.0" text="GPA Calculator " />
             <Label layoutX="65.0" layoutY="210.0" prefHeight="17.0" prefWidth="53.0" text="Class #1:" />
             <Label layoutX="64.0" layoutY="251.0" prefHeight="17.0" prefWidth="53.0" text="Class #2:" />
