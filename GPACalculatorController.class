@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+//import java fx classes by alex
 
 public class GPACalculatorController  {
 	
@@ -37,7 +38,7 @@ public class GPACalculatorController  {
     @FXML
     public JFXButton btnCalc;
    
-
+    //fxml conroller used to initialize elements of GPA calcualtor and text/gpa number value
 
     public void Logout(ActionEvent event) throws Exception {
     	
@@ -47,7 +48,8 @@ public class GPACalculatorController  {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
+		// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
+
 }
     
 	 public void Back(ActionEvent event) throws Exception {
@@ -60,5 +62,5 @@ public class GPACalculatorController  {
 				primaryStage.show();
 				
 		 }
-
+// comments were combined
 }
