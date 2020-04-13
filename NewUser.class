@@ -2,7 +2,7 @@ package application;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
+// import application by alex
 public class NewUser extends AccountController{
 	
 			public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class NewUser extends AccountController{
 		JTextField g = new JTextField();
 		JTextField h = new JTextField();
 		JTextField j = new JTextField();
-
+// j text field inherit from other class where we mentioned name, address, DOB etc..
 		
 		// array objects
 		Object[] grades = {
@@ -32,20 +32,25 @@ public class NewUser extends AccountController{
 	String response;
 	response = JOptionPane.showInputDialog("What is the grade made in class 1?: ");
 	int v1 = Integer.parseInt(response);
-	
+	// enter grades in class 1
 	
 	response = JOptionPane.showInputDialog("What is the grade made in class 2?: ");
 	int v2 = Integer.parseInt(response);
-	
+		// enter grades in class 2
+
 	response = JOptionPane.showInputDialog("What is the grade made in class 3?: ");
 	int v3 = Integer.parseInt(response);
-	
+		// enter grades in class 3
+
 	response = JOptionPane.showInputDialog("What is the grade made in class 4?: ");
 	int v4 = Integer.parseInt(response);
-	
+		// enter grades in class 4
+
 	int gpa = (v1 + v2 + v3 + v4) / 4;
 	String message = "Your GPA value is " + gpa;
-	
+	// calculate gpa
+	// displays string message
 	System.out.println(message);
 	}
 }
+// comments were combined
