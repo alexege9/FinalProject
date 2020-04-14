@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccountController">
+   <children>
+      <Label layoutX="18.0" layoutY="-4.0" prefHeight="19.0" prefWidth="322.0" text="Account Information">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFirst_name" editable="false" layoutX="159.0" layoutY="161.0" text="Mary" />
+      <TextField fx:id="txtLast_name" editable="false" layoutX="159.0" layoutY="196.0" text="Smith" />
+      <Label layoutX="52.0" layoutY="166.0" prefHeight="19.0" prefWidth="82.0" text="First name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="200.0" prefHeight="19.0" prefWidth="82.0" text="Last name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDOB" editable="false" layoutX="160.0" layoutY="231.0" text="05/18/1997" />
+      <TextField fx:id="txtAddy" editable="false" layoutX="160.0" layoutY="266.0" text="331 Beachside Dr" />
+      <Label layoutX="49.0" layoutY="235.0" prefHeight="19.0" prefWidth="92.0" text="Date of Birth:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="270.0" prefHeight="19.0" prefWidth="92.0" text="Address:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="302.0" prefHeight="19.0" prefWidth="92.0" text="City:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCity" editable="false" layoutX="160.0" layoutY="300.0" text="Miami" />
+      <Label layoutX="50.0" layoutY="343.0" prefHeight="19.0" prefWidth="92.0" text="State:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="159.0" layoutY="334.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Florida">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="54.0" layoutY="131.0" prefHeight="19.0" prefWidth="92.0" text="ID #:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" editable="false" layoutX="158.0" layoutY="126.0" text="2121" />
+     <JFXButton layoutY="62.0" onAction="#Logout" prefHeight="52.0" prefWidth="118.0" style="-fx-background-color: #F27D20;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="225.0" layoutY="62.0" onAction="#GPA" prefHeight="52.0" prefWidth="125.0" style="-fx-background-color: #F27D20;" text="GPA Calculator" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="110.0" layoutY="62.0" onAction="#Grades" prefHeight="52.0" prefWidth="118.0" style="-fx-background-color: #F27D20;" text="Grades" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Grades">
+   <children>
+      <AnchorPane layoutX="-43.0" layoutY="-61.0" prefHeight="500.0" prefWidth="457.0">
+         <children>
+            <Label layoutX="159.0" layoutY="58.0" prefHeight="46.0" prefWidth="203.0" text="Student Grades">
+               <font>
+                  <Font name="Gabriola" size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtg1" editable="false" layoutX="199.0" layoutY="236.0" prefHeight="25.0" prefWidth="75.0" text="94 %" />
+            <JFXTextField fx:id="txtg2" editable="false" layoutX="198.0" layoutY="286.0" prefHeight="25.0" prefWidth="75.0" text="83 %" />
+            <JFXTextField fx:id="txtg3" editable="false" layoutX="198.0" layoutY="346.0" prefHeight="25.0" prefWidth="75.0" text="72 %" />
+            <JFXTextField fx:id="txtg4" editable="false" layoutX="198.0" layoutY="403.0" prefHeight="25.0" prefWidth="75.0" text="87 %" />
+            <JFXButton layoutX="306.0" layoutY="110.0" onAction="#Account" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #F27D20;" text="Account Information" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect></JFXButton>
+            <JFXButton layoutX="58.0" layoutY="110.0" onAction="#Logout" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #F27D20;" text="Logout" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect></JFXButton>
+            <Label fx:id="txtc1" layoutX="93.0" layoutY="239.0" prefHeight="25.0" prefWidth="92.0" text="Algebra 200" />
+            <Label fx:id="txtc2" layoutX="93.0" layoutY="289.0" prefHeight="25.0" prefWidth="92.0" text="English 101" />
+            <Label fx:id="txtc3" layoutX="92.0" layoutY="347.0" prefHeight="25.0" prefWidth="92.0" text="History 100" />
+            <Label fx:id="txtc4" layoutX="93.0" layoutY="405.0" prefHeight="25.0" prefWidth="92.0" text="Science 250" />
+            <JFXButton layoutX="175.0" layoutY="110.0" onAction="#GPA" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #F27D20;" text="GPA Calculator" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXTextField fx:id="txtg5" editable="false" layoutX="327.0" layoutY="236.0" prefHeight="25.0" prefWidth="75.0" text="89 %" />
+            <JFXTextField fx:id="txtg6" editable="false" layoutX="327.0" layoutY="286.0" prefHeight="25.0" prefWidth="75.0" text="92 %" />
+            <JFXTextField fx:id="txtg7" editable="false" layoutX="327.0" layoutY="346.0" prefHeight="25.0" prefWidth="75.0" text="85 %" />
+            <JFXTextField fx:id="txtg8" editable="false" layoutX="327.0" layoutY="402.0" prefHeight="25.0" prefWidth="75.0" text="86 %" />
+            <Label layoutX="194.0" layoutY="191.0" prefHeight="30.0" prefWidth="92.0" text="Homework">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="343.0" layoutY="192.0" prefHeight="17.0" prefWidth="75.0" text="Test">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="192.0" prefHeight="17.0" prefWidth="75.0" text="Class">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
