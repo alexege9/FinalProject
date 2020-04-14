@@ -1,16 +1,21 @@
 package application;
 
+//Java classes implemented 
 import java.awt.Event;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-// import application done by alex
+
 public class Initialize extends GPACalculatorController {
-	
-	
-	
+	/** 
+	 * The Initialize class extends the GPACalculatorController
+	 * Implemented by Alex Egeonu
+	 * Gives the values of the text into only numeral values
+	 * also closes the window when scene is complete 
+	 * Comments implemented by Alex Egeonu and Ishaun Wright
+	 */
 
 	public boolean handleEvent(Event event) {
 	     if (event.target==v1 && event.target==v2) {
@@ -21,7 +26,7 @@ public class Initialize extends GPACalculatorController {
 	     }
 		return false;
 	}
-	// formula usd to calculate GPA
+	
 	@Override
 	public void Logout(ActionEvent event) throws Exception {
 		Stage primaryStage = new Stage ();
@@ -31,10 +36,8 @@ public class Initialize extends GPACalculatorController {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.show();
-	// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
-
+		System.exit(0);
 		super.Logout(event);
 	}
 }
-// comments were combined
 	
