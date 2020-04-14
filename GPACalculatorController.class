@@ -1,5 +1,6 @@
 package application;
 
+//Java classes implemented 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -8,9 +9,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-//import java fx classes by alex
 
 public class GPACalculatorController  {
+	
+	/** 
+	 * The GPACalculatorController class implements the new scene and extends to Initialize class
+	 * Displays Gpa calculator screen implemented by Alex Egeonu
+	 * Retrieves input and user clicks Calculate button, the button calculates GPA
+	 * Also other tabs to other scenes implemented 
+	 * Comments implemented by Alex Egeonu and Ishaun Wright
+	 */
 	
 	@FXML
 	private void goAccount() {
@@ -38,7 +46,7 @@ public class GPACalculatorController  {
     @FXML
     public JFXButton btnCalc;
    
-    //fxml conroller used to initialize elements of GPA calcualtor and text/gpa number value
+
 
     public void Logout(ActionEvent event) throws Exception {
     	
@@ -48,11 +56,10 @@ public class GPACalculatorController  {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
-
+		
 }
     
-	 public void Back(ActionEvent event) throws Exception {
+	 public void Account(ActionEvent event) throws Exception {
 		
 			 Stage primaryStage = new Stage ();
 				Parent root = FXMLLoader.load(getClass().getResource("/application/Account.fxml"));
@@ -62,5 +69,14 @@ public class GPACalculatorController  {
 				primaryStage.show();
 				
 		 }
-// comments were combined
+	 public void Grades(ActionEvent event) throws Exception {
+			
+		 Stage primaryStage = new Stage ();
+			Parent root = FXMLLoader.load(getClass().getResource("/application/Grades.fxml"));
+			Scene scene = new Scene(root,400,400);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+
+}
 }
