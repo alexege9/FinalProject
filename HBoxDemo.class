@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 public class HBoxDemo {
 	/** 
-	 * The AccountController class implements the new scene 
+	 * The HBoxDemo class implements the new scene 
 	 * Displays Login screen implemented by Alex Egeonu 
 	 * Comments were combined
 	 */
@@ -46,7 +46,7 @@ public class HBoxDemo {
     	// Defines the User name and password for the login
     	if (txtUser.getText().equals("Msmith") && txtPassword.getText().contentEquals("campbell")) {
     		
-    		// Label displays thank you for Logging in! after successfully logging in
+    		// Label displays "thank you for Logging in!" after successfully logging in
     		lblchanger.setText("Thank you for Logging in!");
     		
     		//create next Stage for next Scene
