@@ -1,56 +1,134 @@
 package application;
 
+//Java classes implemented 
+import java.util.Scanner;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-// import application by alex
-public class NewUser extends AccountController{
+
+public class UserLogin  {
 	
-			public static void main(String[] args) {
-		JTextField a = new JTextField();
-		JTextField s = new JTextField();
-		JTextField d = new JTextField();
-		JTextField f = new JTextField();
-		JTextField g = new JTextField();
-		JTextField h = new JTextField();
-		JTextField j = new JTextField();
-// j text field inherit from other class where we mentioned name, address, DOB etc..
+	public static void main(String[] args) {
 		
-		// array objects
-		Object[] grades = {
-				"First name : ", a,
-				"Last name : ", s,
-				"Date of Birth : ", d,
-				"Address:", f,
-				"City :", g,
-				"State :", h,
-				"Zipcode :",j
-		};
-		
-	JOptionPane.showConfirmDialog(null, grades, "Create New Account", JOptionPane.OK_CANCEL_OPTION);
-	
-	
-	String response;
-	response = JOptionPane.showInputDialog("What is the grade made in class 1?: ");
-	int v1 = Integer.parseInt(response);
-	// enter grades in class 1
-	
-	response = JOptionPane.showInputDialog("What is the grade made in class 2?: ");
-	int v2 = Integer.parseInt(response);
-		// enter grades in class 2
+		/** 
+		 * The UserLogin class 
+		 * Another form of the Login application which uses JOptionPane
+		 * Gives a variety of different ways to navigate the application
+		 * Comments implemented by Alex Egeonu and Ishaun Wright
+		 */
 
-	response = JOptionPane.showInputDialog("What is the grade made in class 3?: ");
-	int v3 = Integer.parseInt(response);
-		// enter grades in class 3
+		// JTextField created for user input in JOptionPane
+			try (// Scanner
+			Scanner input1 = new Scanner(System.in)) {
+				// Variables for new user
+				JTextField a = new JTextField();
+				JTextField s = new JTextField();
+				JTextField d = new JTextField();
+				JTextField f = new JTextField();
+				JTextField g = new JTextField();
+				JTextField h = new JTextField();
+				JTextField j = new JTextField();
 
-	response = JOptionPane.showInputDialog("What is the grade made in class 4?: ");
-	int v4 = Integer.parseInt(response);
-		// enter grades in class 4
+					// array objects
+					Object[] info = {
+						"First name : ", a,
+						"Last name : ", s,
+						"Date of Birth : ", d,
+						"Address:", f,
+						"City :", g,
+						"State :", h,
+						"Zipcode :",j
+				};
+				
+				System.out.println("Welcome to the Campbell Database" );
+				System.out.println("Enter 1 to create a new account");
+				System.out.println("Enter 2 to login");	
+				
+					// if / else statement created to navigate the system			
+					int menu;
+					menu = input1.nextInt();
+				if (menu == 1) {
+					
 
-	int gpa = (v1 + v2 + v3 + v4) / 4;
-	String message = "Your GPA value is " + gpa;
-	// calculate gpa
-	// displays string message
-	System.out.println(message);
-	}
+						JOptionPane.showConfirmDialog(null, info, "Campbell Database", JOptionPane.OK_CANCEL_OPTION);
+				
+					}
+				else if (menu == 2){
+				System.out.println("Please enter 4 digit student ID number");
+						int idnumber = input1.nextInt(); 
+					        if (idnumber == 2121) {
+					        	
+					        }else {
+					        	System.out.println("Incorrect student ID number");
+					        	System.exit(0);
+					        }
+					     // Try method used for Scanner to operate 
+					        // Switch statement to decided which part of menu user would like to navigate to 
+						try 
+						(	// Scanner
+								Scanner input = new Scanner(System.in)) {
+							//Prompt user to enter number to navigate to section
+							System.out.println("Hello Mary Smith");
+							System.out.println("Enter 0 to calculate a gpa");
+							System.out.println("   ");	
+
+							System.out.println("Enter 1 to view classes");
+							System.out.println("   ");	
+
+							System.out.println("Enter 3 to log out the system");
+							System.out.println("   ");	
+							
+							
+							
+							// Switch statement for menu
+							int menu2;
+							menu2 = input.nextInt();
+							switch (menu2) {
+							case 0:
+								String response;
+								
+								response = JOptionPane.showInputDialog("What is the grade made in class 1?: ");
+								int v1 = Integer.parseInt(response);
+
+
+								response = JOptionPane.showInputDialog("What is the grade made in class 2?: ");
+								int v2 = Integer.parseInt(response);
+
+								response = JOptionPane.showInputDialog("What is the grade made in class 3?: ");
+								int v3 = Integer.parseInt(response);
+
+								response = JOptionPane.showInputDialog("What is the grade made in class 4?: ");
+								int v4 = Integer.parseInt(response);
+
+								int gpa = (v1 + v2 + v3 + v4) / 4;
+									String message = "Your GPA value is " + gpa;
+
+						System.out.println(message);
+						System.exit(0);		
+						break;
+								
+					case 1:
+						
+						// String Grades
+						String english = "English: 90 \n";
+						String math = "Math: 86 \n";
+						String science = "Science: 78 \n";
+						String history = "History: 93 \n";
+						JOptionPane.showMessageDialog(null,english + math + science + history);
+						System.exit(0);
+						
+						break;
+						
+					case 2:
+						
+						
+						
+					case 3:
+						System.out.println("Thank you for visitng! ");
+						System.out.println("User has logged off");
+						System.exit(0);
+
+						break;
+							}}}
+			}
+		}
 }
-// comments were combined
