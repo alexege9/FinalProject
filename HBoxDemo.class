@@ -18,7 +18,7 @@ public class HBoxDemo {
 	/** 
 	 * The HBoxDemo class implements the new scene 
 	 * Displays Login screen implemented by Alex Egeonu 
-	 * Comments were combined
+	 * Comments were implemented by Alex Egeonu and Ishaun Wright 
 	 */
 	
     @FXML
