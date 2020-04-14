@@ -1,5 +1,6 @@
 package application;
 
+//Java classes implemented 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,8 +8,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-//import java fx classes by alex
-public class AccountController {
+
+public class AccountController extends Main {
+	
+	/** 
+	 * The AccountController class implements the new scene 
+	 * Displays Login screen implemented by Alex Egeonu
+	 * Comments implented by Alex Egeonu and Ishaun Wright
+	 */
 	
 	@FXML
 	private void goLogin() {
@@ -30,7 +37,8 @@ public class AccountController {
 
     @FXML
     private TextField txtID;
-    //fxml conroller used to initialize elements of the other class where we the first name, DOB, addy and city was mentioned 
+    
+    // Displays the Account information scene 
     public void Logout(ActionEvent event) throws Exception {
 
     	
@@ -40,22 +48,24 @@ public class AccountController {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
-    }
+
+}
     	 public void GPA(ActionEvent event) throws Exception {
-    		
-    			 Stage primaryStage = new Stage ();
-    				Parent root = FXMLLoader.load(getClass().getResource("/application/GPA.fxml"));
-    				Scene scene = new Scene(root,400,400);
-    				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-    				primaryStage.setScene(scene);
-    				primaryStage.show();
-    				// 			// stage is created because of the JAva fx root startup, content of scene will be diplayed in the stage
-
+ 			
+ 		 Stage primaryStage = new Stage ();
+ 			Parent root = FXMLLoader.load(getClass().getResource("/application/GPA.fxml"));
+ 			Scene scene = new Scene(root,400,400);
+ 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+ 			primaryStage.setScene(scene);
+ 			primaryStage.show();
     		 }
-    	 
-			// comments were combined together.
-	
-		
-
+    	 public void Grades(ActionEvent event) throws Exception {
+    			
+    		 Stage primaryStage = new Stage ();
+    			Parent root = FXMLLoader.load(getClass().getResource("/application/Grades.fxml"));
+    			Scene scene = new Scene(root,400,400);
+    			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+    			primaryStage.setScene(scene);
+    			primaryStage.show();
+}
 }
