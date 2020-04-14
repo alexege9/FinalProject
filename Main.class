@@ -1,5 +1,6 @@
 package application;
 
+//Java classes implemented 
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,7 +9,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class Main extends Application {
-	
+	/** 
+	 * The Main class 
+	 * Gathers all the resources to launch the application
+	 * Once resources gathered, the application opens the Login scene 
+	 */
+
+					
 	@Override
 	public void start(Stage primaryStage) {
 		try {
