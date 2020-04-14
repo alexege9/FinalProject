@@ -1,8 +1,8 @@
 package application;
 
+//Java classes implemented 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,12 +11,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-// import application of text field/password done by alex
+
 
 
 public class HBoxDemo {
-	public static void main(String [] args) {
-	}
+	/** 
+	 * The AccountController class implements the new scene 
+	 * Displays Login screen implemented by Alex Egeonu 
+	 * Comments were combined
+	 */
+	
     @FXML
     // Displays Campbell Database at the top
     private Label lblCamp;
@@ -63,4 +67,3 @@ public class HBoxDemo {
     
     }
 }
-// comments were combined
