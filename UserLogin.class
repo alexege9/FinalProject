@@ -6,7 +6,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class UserLogin  {
-	
 	public static void main(String[] args) {
 		
 		/** 
@@ -15,10 +14,13 @@ public class UserLogin  {
 		 * Gives a variety of different ways to navigate the application
 		 * Comments implemented by Alex Egeonu and Ishaun Wright
 		 */
+			
+			Campbellbucks Cbucks = new Campbellbucks ();
 
 		// JTextField created for user input in JOptionPane
 			try (// Scanner
 			Scanner input1 = new Scanner(System.in)) {
+					
 				// Variables for new user
 				JTextField a = new JTextField();
 				JTextField s = new JTextField();
@@ -52,6 +54,7 @@ public class UserLogin  {
 						JOptionPane.showConfirmDialog(null, info, "Campbell Database", JOptionPane.OK_CANCEL_OPTION);
 				
 					}
+				
 				else if (menu == 2){
 				System.out.println("Please enter 4 digit student ID number");
 						int idnumber = input1.nextInt(); 
@@ -73,6 +76,9 @@ public class UserLogin  {
 
 							System.out.println("Enter 1 to view classes");
 							System.out.println("   ");	
+							
+							System.out.println("Enter 2 to view account balance");
+							System.out.println("   ");	
 
 							System.out.println("Enter 3 to log out the system");
 							System.out.println("   ");	
@@ -83,9 +89,12 @@ public class UserLogin  {
 							int menu2;
 							menu2 = input.nextInt();
 							switch (menu2) {
+							
 							case 0:
 								String response;
 								
+								// Generate JOption box asking question
+								// assigns value according to user input 
 								response = JOptionPane.showInputDialog("What is the grade made in class 1?: ");
 								int v1 = Integer.parseInt(response);
 
@@ -98,17 +107,18 @@ public class UserLogin  {
 
 								response = JOptionPane.showInputDialog("What is the grade made in class 4?: ");
 								int v4 = Integer.parseInt(response);
-
+								
+								//Gpa Calculation
 								int gpa = (v1 + v2 + v3 + v4) / 4;
-									String message = "Your GPA value is " + gpa;
+									String value = "Your GPA value is " + gpa;
 
-						System.out.println(message);
+						System.out.println(value);
 						System.exit(0);		
 						break;
 								
 					case 1:
 						
-						// String Grades
+						// String Grades into JOptionPane
 						String english = "English: 90 \n";
 						String math = "Math: 86 \n";
 						String science = "Science: 78 \n";
@@ -119,10 +129,17 @@ public class UserLogin  {
 						break;
 						
 					case 2:
+						// Objects call to abstract class to retrieve values 
+						Cbucks.Cbucks();
+						Cbucks.spent();
+						Cbucks.balance();
 						
-						
+						System.exit(0);
+						break;
 						
 					case 3:
+						//Displays log off message to user 
+						
 						System.out.println("Thank you for visitng! ");
 						System.out.println("User has logged off");
 						System.exit(0);
@@ -131,4 +148,6 @@ public class UserLogin  {
 							}}}
 			}
 		}
-}
+
+	
+	}
