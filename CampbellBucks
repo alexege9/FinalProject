@@ -1,0 +1,34 @@
+package application;
+
+public class Campbellbucks extends Financial {
+	
+	/** 
+	 * The CampbellBucks class 
+	 * Gives the value of the object
+	 * Methods implemented by Alex Egeonu
+	 * Comments by Alex Egeonu and Ishaun Wright
+	 */
+	
+	// integer values set for user 
+	int cbuck = 600;
+	int bal = 428;
+	
+	// method 
+	public void Cbucks() {
+		// TODO Auto-generated method stub
+		System.out.println("Account Campbell bucks: $" + cbuck + " Campbellbucks");
+		
+
+	}
+	
+	// method
+	@Override
+	public void balance() {
+		// TODO Auto-generated method stub
+		System.out.println("Account balance: $" + bal + " Campbellbucks");	
+	}
+
+	
+
+	}
+	
